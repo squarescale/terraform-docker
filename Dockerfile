@@ -1,4 +1,4 @@
-ARG TF_VERSION=0.11.2
+ARG TF_VERSION=0.11.7
 FROM golang:alpine as terraform-provider-etcdiscovery
 RUN apk --update add git openssh \
     && go get -v  github.com/squarescale/terraform-provider-etcdiscovery
